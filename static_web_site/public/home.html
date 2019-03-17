@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+	<title> La musique </title>
+	<style>
+		body {
+		
+			padding: 10px;
+            background: url('./trees.png');
+            opacity: 95.0;
+			text-align: center;
+		}
+		.contents{
+			background: #fff;
+			padding: 20px;
+			margin: auto;
+			opacity: 80.0;
+			text-align: center;
+		}
+		.contents button{
+			width: 100px;
+			opacity: 1.0;
+			background: #000;
+		}
+		h1 {
+            padding: 20px;
+            text-align: center;
+            color: #800000;
+            font-size: 100px;
+            font-family: "Helvetica neue", Comic, serif;
+		}
+		h2 {
+			color: 	#D35400;
+            font-size: 28px;
+            font-family: "Comic Sans MS", Comic, serif;
+            font-weight:bold;
+
+        } 
+        h3 {
+            color: #E74C3C;
+            font-family: "Comic Sans MS", Comic, serif;
+        }
+        hr {
+            border: none;
+            height: 5px;
+            /* Set the hr color */
+            color: #333; /* old IE */
+            background-color: #333; /* Modern Browsers */
+}
+		a {
+			color: #2f2f2f;
+			font-size: 18px
+        }
+        img {
+            opacity: 0.7;
+            filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+        img:hover {
+            opacity: 1.0;
+            filter: alpha(opacity=100); /* For IE8 and earlier */
+        }
+        .w3-animate-bottom{
+            position:relative;
+            animation:animatebottom 1s
+        }   
+            @keyframes animatebottom
+                {from{
+                    bottom:-300px;opacity:0
+                } to{bottom:0;opacity:1}}
+        .w3-animate-left{
+            position:relative;
+            animation:animateleft 3s
+        }
+            @keyframes animateleft{
+                from{
+                    left:-300px;opacity:0
+                } to{
+                    left:0;opacity:1
+                }
+            }
+        .w3-animate-fading{
+            animation:fading 10s infinite
+        }
+            @keyframes fading{
+                0%{
+                    opacity:0
+                }50%{
+                    opacity:1
+                }100%{
+                    opacity:0
+                }}        
+	</style>
+</head>
+<body>
+    <hr>
+    <div class="w3-animate-fading">
+        <h1> La musique </h1>
+    </div>
+    <div class = "w3-animate-left">
+        <h2> Where words fail, music speaks!  </h2>
+    </div>
+	<hr>
+    <div class="row"></div>
+    <div class = "w3-animate-bottom">
+        <div class="col-md-4">
+            <h2> Perfect </h2>
+            <h3> Artist: <i>Ed Sheeran</i> </h3>
+            <img class="img"  src="ed_sheeran_perfect.jpg"  height="300" width="300"/>
+            <br/>
+            <br/>
+            <audio controls>
+                <source src="http://localhost:3000/download?id=perfect.mp3" type="audio/mpeg">
+            </audio>
+            <br/>
+            <a href="http://localhost:3000/download?id=perfect.mp3"  target="_blank"> <button class="btn btn-info"> Download Song</button> </a>
+            <br/>
+            <br/>
+            <a href="http://localhost:3000/lyrics?id=perfect"  target="_blank"> <button class="btn btn-info"> Show Lyrics </button> </a> 
+            <br/>
+            <br/>
+            <a href="http://localhost:3000/videos?id=perfect"  target="_blank"> <button class="btn btn-info"> Play Video </button> </a> 
+        </div>
+        <div class="col-md-4">
+            <h2> 100 Words </h2>
+            <h3> Artist: <i>Prateek Kuhad</i> </h3>
+            <img class="img" src="100_words.jpeg" height="300" width="300"/>
+            <br/>
+            <br/>
+            <audio controls>
+                <source src="http://localhost:3000/download?id=100words.mp3" type="audio/mpeg">
+            </audio>
+            <br/>
+            <a href="http://localhost:3000/download?id=100words.mp3"  target="_blank"> <button class="btn btn-info">Download Song</button> </a>
+            <br/>
+            <br/>
+            <a href="http://localhost:3000/lyrics?id=100words"  target="_blank"> <button class="btn btn-info">Show lyrics </button> </a>
+            <br/>
+            <br/>
+            <a href="http://localhost:3000/videos?id=100words"  target="_blank" > <button class="btn btn-info">Play Video</button> </a> 
+        </div>			
+        <div class="col-md-4">
+            <h2> Girls like you </h2>
+            <h3> Artist: <i>Maroon 5</i> </h3>
+            <img class="img" src="girls_like_you.jpeg" height="300" width="300"/>
+            <br/>
+            <br/>
+            <audio controls>
+                <source src="http://localhost:3000/download?id=girlslikeyou.mp3" type="audio/mpeg">
+            </audio>
+            <br/>
+            <a href="http://localhost:3000/download?id=girlslikeyou.mp3"  target="_blank"> <button class="btn btn-info"> Download Song </button> </a> 
+            <br/>
+            <br/>
+            <a href="http://localhost:3000/lyrics?id=girlslikeyou"  target="_blank"> <button class="btn btn-info"> Show Lyrics </button> </a>
+            <br/>
+            <br/>
+            <a href="http://localhost:3000/videos?id=girlslikeyou"  target="_blank"> <button class="btn btn-info"> Play Video </button> </a> 
+        </div>
+    </div>
+</body>
+</html>
